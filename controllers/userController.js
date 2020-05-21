@@ -29,14 +29,14 @@ let userController = {
     return user; // si no lo encuentra devuelve null
   },
 
-  profile: function (req, res, next) {
+  profile: function (req, res) {
     let usuario = userController.searchByEmail(req.params.email);
     res.render('profile', {usuario});
   },
 
 
-  mostrarRegistro: function (req, res, next) {
-
+  mostrarRegistro: function (req, res) {
+    res.render ('registro');
 
   }
 

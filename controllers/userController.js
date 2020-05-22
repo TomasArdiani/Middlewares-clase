@@ -51,16 +51,19 @@ let userController = {
 
   },
   create: function(req, res){
-    let usuario = {
-      nombre: req.body.nombre,
-      apellido: req.body.apellido,
-      email:req.body.email,
-      password: req.body.password,
-      avatar: req.files[0].filename
+    if (typeof req.file === 'undefined') {
+      res.render('index',{title: "ERROR: Debe subir un archivo de Avatar para registrarse."});
+    }else{
+      let usuario = {
+        nombre: req.body.nombre,
+        apellido: req.body.apellido,
+        email:req.body.email,
+        password: req.body.password,
+        avatar: req.file.filename
+      }
+      addUserToList(usuario);
+      res.render('profile', {usuario});
     }
-    console.log(req);
-    addUserToList(usuario);
-    res.render('profile', {usuario});
   }
 
 }

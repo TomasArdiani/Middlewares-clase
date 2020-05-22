@@ -11,6 +11,17 @@ function readHTML(filename) {
 function readJSONfile() {
   return JSON.parse(fs.readFileSync(userController.archivo, 'utf-8'));
 }
+  // Guarda el json de usuarios
+  function saveJSONfile(objetos) {
+    fs.writeFileSync(userController.archivo, JSON.stringify(objetos, null, ' '));
+  }
+  // Agrega un nuevo usuario
+  function addUserToList(usuario) {
+    let usuarios = readJSONfile();
+    usuarios.push(usuario);
+    saveJSONfile(usuarios);
+  }
+
 
 
 
@@ -38,6 +49,18 @@ let userController = {
   mostrarRegistro: function (req, res) {
     res.render ('registro');
 
+  },
+  create: function(req, res){
+    let usuario = {
+      nombre: req.body.nombre,
+      apellido: req.body.apellido,
+      email:req.body.email,
+      password: req.body.password,
+      avatar: req.files[0].filename
+    }
+    console.log(req);
+    addUserToList(usuario);
+    res.render('profile', {usuario});
   }
 
 }

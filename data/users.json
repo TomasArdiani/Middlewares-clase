@@ -1,17 +1,47 @@
 [
-    {
-     "nombre": "Luna",
-     "apellido": "Marchetta",
-     "email": "lunitam@gmail.com",
-     "password": "qweqwe",
-     "avatar": "Luna Marchetta - 11-3-2020 13_18_20.jpg"
-    },
-    {
-     "nombre": "Bruno",
-     "apellido": "Marchetta",
-     "email": "brunito@gmail.com",
-     "password": "qweqwe",
-     "avatar": "Bruno Marchetta - 11-3-2020 13_18_48.jpg"
-    }
-   ]
-   
+ {
+  "nombre": "Luna",
+  "apellido": "Marchetta",
+  "email": "lunitam@gmail.com",
+  "password": "qweqwe",
+  "avatar": "Luna Marchetta - 11-3-2020 13_18_20.jpg"
+ },
+ {
+  "nombre": "Bruno",
+  "apellido": "Marchetta",
+  "email": "brunito@gmail.com",
+  "password": "qweqwe",
+  "avatar": "Bruno Marchetta - 11-3-2020 13_18_48.jpg"
+ },
+ {
+  "avatar": "Este es el avatar"
+ },
+ {
+  "avatar": "Este es el avatar"
+ },
+ {
+  "avatar": "Este es el avatar"
+ },
+ {
+  "avatar": "Este es el avatar"
+ },
+ {
+  "avatar": "Este es el avatar"
+ },
+ {
+  "avatar": "Este es el avatar"
+ },
+ {
+  "avatar": "Este es el avatar"
+ },
+ {
+  "avatar": "Este es el avatar"
+ },
+ {
+  "nombre": "Valentina",
+  "apellido": "Scherl",
+  "email": "valescherl@yahoo.com.ar",
+  "password": "123",
+  "avatar": "Este es el avatar"
+ }
+]
